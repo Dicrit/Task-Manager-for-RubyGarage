@@ -1,0 +1,216 @@
+/*
+glyphicon glyphicon-trash  musor
+glyphicon glyphicon-pencil   pencil.
+glyphicon glyphicon-calendar   calendar
+
+*/
+body
+{
+	background-color: #d5d9f1;
+}
+.glyphicon-triangle-bottom{
+    position: relative;
+    top: -9px;
+    left: -1px;
+}
+.TaskEdit .glyphicon-pencil, .TaskEdit .glyphicon-trash{
+    position: relative;
+    top: -15px;
+}
+p
+{
+	font-size:20pt;
+	margin:0px
+}
+.ProjectHead
+{
+	display:table;
+	width:100%;
+	height:45px;
+	background-color:blue;
+	border: 1px solid #4060b0;;
+	
+	background: #5b75cc; /* Old browsers */
+background: -moz-linear-gradient(top, #5b75cc 0%, #2a4dcc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #5b75cc 0%,#2a4dcc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #5b75cc 0%,#2a4dcc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b75cc', endColorstr='#2a4dcc',GradientType=0 );
+}
+/*.ProjectHead > div{
+		height:inherit;
+		display:table-cell;		
+		vertical-align: middle;
+}*/
+.ProjectHead > div > span{
+	color:black;
+	font-size:18pt;
+	display:inline-block;
+	vertical-align: middle;
+	padding: 10px;
+}
+.ProjectHead  > .col2 > span{
+	color:white;
+	font-size:13pt;
+	visibility: hidden;
+}
+.ProjectHead > .col2 > p{
+	text-align:left;
+	font-size:16pt;
+	color:white;
+	display:inline-block;
+	vertical-align: middle;
+	width:550px;
+	/*display:none;*/
+}
+.ProjectHead > .col2 > input{
+	vertical-align: middle;
+	width:550px;
+	background: rgba(0,0,255, 0.08);
+	border:1px solid rgba(1,1,244,0.2);
+	font-weight: 600;
+	color: lightgray;
+	font-size:18pt;
+	display:none;
+	/*display:inline-block;*/
+}
+.ProjectHead > .col2 > input::-webkit-input-placeholder {
+  font-size : 11pt;
+  color: gray;
+}
+.ProjectHead:hover > .col2 > span{
+	visibility: visible;
+}
+.TaskManager
+{
+	height:40px; /*40*/
+	background-color:lightgray;
+	display:table;
+	width: 100%;
+}
+
+
+.mainblock
+{
+	margin-top:5px;
+	margin-bottom:35px;
+	width:700px;
+	/*height:350px;*/
+	background-color:white;
+	border-radius: 0 0 15px 15px;
+}
+#AddProjectButton{
+	height:38px;
+	width: 160px;
+	border:0;
+	color:white;
+	font-size:12pt;
+	font-weight: bold;
+	
+	background: #5b75cc; /* Old browsers */
+background: -moz-linear-gradient(top, #5b75cc 0%, #2a4dcc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #5b75cc 0%,#2a4dcc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #5b75cc 0%,#2a4dcc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b75cc', endColorstr='#2a4dcc',GradientType=0 );
+}
+#AddProjectButton > span{
+	text-shadow: 0 1px 2px #6a86b4, 0 -1px 1px black;
+	color:#32486c;
+	font-size: 13pt;
+}
+.Task{
+	display:table;
+	width:100%;
+}
+.Task .col2 > span{
+	text-align:left;
+	font-size: 10pt;
+	color: gray;
+	margin:0;
+	display:inline-block;
+	width:520px;
+	vertical-align:middle;
+}
+.Task .col2 > input{
+	width:520px;
+	height:20px;
+	display:none;
+	border:0;
+}
+.Task .col2 > input:focus{
+	outline: none;
+}
+.Task > *
+{
+	padding: 5px 0;
+	border: 1px solid lightgray;
+}
+.TaskEdit
+{
+	width: 100px;
+	height:20px;
+	display:inline-block;
+	vertical-align: middle;
+	visibility: hidden;
+}
+.Task:hover  .TaskEdit
+{
+	visibility: visible;
+}
+.TaskEdit div{
+	display:inline-block;
+	width:30%;
+	text-align:center;
+}
+.col1, .col2{
+	height:inherit;
+	display:table-cell;
+	vertical-align: middle;
+}
+.col1{
+	width:7%;
+}
+.col1 .glyphicon-plus{
+	font-size:15pt;
+	color:green;
+	text-shadow: 0 -1px 2px black, 0 1px 1px white;
+	
+}
+.glyphicon-trash:hover, .glyphicon-pencil:hover, .glyphicon-triangle-bottom:hover, .glyphicon-eject:hover{
+	cursor:pointer;
+}
+}
+.col2{
+	width:90%;
+}
+.TaskInput{
+	width: 525px;
+	height: 27px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.col2 button{
+	width: 100px;
+	height: 27px;
+	display: inline-block;
+	color:white;
+	font-size:9pt;
+	vertical-align: middle;
+	border: 0;
+	border-radius: 0 5px 5px 0;
+	
+	background: #4dbc3e; /* Old browsers */
+	background: -moz-linear-gradient(top, #4dbc3e 0%, #396d1f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #4dbc3e 0%,#396d1f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #4dbc3e 0%,#396d1f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbc3e', endColorstr='#396d1f',GradientType=0 );
+}
+.col2 button:hover{
+background: green;
+}
+::-webkit-scrollbar {
+      width: 15px;
+}
+::-webkit-scrollbar-thumb {
+      background-color: rgba(28, 28, 173, 0.43); 
+	  border-radius: 10px 10px 10px 10px;
+}
