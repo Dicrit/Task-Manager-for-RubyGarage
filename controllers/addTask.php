@@ -1,6 +1,6 @@
 <?php 
-$name = $_GET['value'];
-$text = $_GET['text'];
+$name = mysql_real_escape_string($_GET['value']);
+$text = mysql_real_escape_string($_GET['text']);
 $userid = $_SESSION['userid'];
 $query = "SELECT id FROM projects WHERE user_id = '$userid' AND name='$name'";
 $id = $db->query_once($query);
