@@ -1,9 +1,11 @@
-/*
-glyphicon glyphicon-trash  musor
-glyphicon glyphicon-pencil   pencil.
-glyphicon glyphicon-calendar   calendar
 
-*/
+.quit
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	font-size:14pt;
+}
 body
 {
 	background-color: #d5d9f1;
